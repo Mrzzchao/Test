@@ -10,14 +10,8 @@
     这是一个在线测试页面
 </body>
 <script>
-    try {
-        if(typeof window !== 'undefined') {
-            sessionStorage.setItem('noHead', true)
-        }
-        alert(sessionStorage.getItem('noHead'))
-        alert(JSON.stringify(sessionStorage))
-    } catch(e) {
-        alert(e)
-    }
+    alert(~-1)
+    alert(!!(~-1))
+    alert(~0)
 </script>
 </html>
