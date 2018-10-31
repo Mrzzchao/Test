@@ -10,12 +10,12 @@
     这是一个在线测试页面
 </body>
 <script>
-    alert(~-1)
-    alert('-----------')
-    alert(~-1)
-    alert(!!(~-1))
-    alert(~0)
-    alert(!!(~0))
+    if(typeof window !== 'undefined' && location.search) {
+        if(location.search.indexOf('nohead') > -1) {
+            sessionStorage.setItem('noHead', true)
+        }
+    }
+    alert(sessionStorage.getItem('noHead'))
 
 </script>
 </html>
